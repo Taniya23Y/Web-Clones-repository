@@ -1,0 +1,312 @@
+/*------Import font--------*/
+@import url('https://rejouice.com/assets/fonts/NBInternationalProBoo.woff2');
+@import url('https://rejouice.com/assets/fonts/Rejouice-Headline.woff2');
+
+@font-face {
+    font-family: nb;
+    src: url(./assets/NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rejouice;
+    src: url(./assets/Rejouice-Headline.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Rejouice Headline"; */
+    font-family: nb;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/*-------------------------------*/
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.cursor h5{
+    font-family: nb;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.section-1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.section-1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0); */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-bottom: 5vw; */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: rgb(0, 200, 255); */
+    padding: 3vw 3vw;
+}
+
+nav h3{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+nav h4{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.section-1-content h1{
+    font-family: rejouice;
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 20vw;
+}
+
+.section-1-content h1 span{
+    font-family: rejouice;
+}
+
+/*----------------------------*/
+.section-2, .section-4{
+    width: 100%;
+    height: 100vh;
+    background-color: #faf8f3;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+.part1 h3{
+    font-size: 1.4vw;
+    font-weight: 500;
+    width: 26%;
+}
+
+.part1 h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.elem{
+    overflow: hidden;
+}
+
+.elem h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+}
+
+/*--------------------------------*/
+
+/*--------------------------------*/
+.section-3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #faf8f3;
+    position: relative;
+    padding: 3vw;
+}
+
+.section-3-top{
+   /* background-color: red; */
+   text-align: center;
+}
+
+.section-3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.section-3-top h4 span{
+    font-size: 0.9vw;
+    background-color: #000;
+    color: #fff;
+    padding: 0.35rem 0.625rem;
+    border-radius: 0.625rem;
+}
+
+.section-3-top h2{
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+
+.section-3-div{
+    /* height: 80vh; */
+    width: 100%;
+    /* background-color: rgb(62, 104, 141); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vw;
+    gap: 0.125rem;
+}
+
+.section-3-h3{
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 0.225rem;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.section-3-h3 h4{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.section-3-h3 h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.section-3-div .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.section-3-div .box{
+    height: 100%;
+    width: 32.5%;
+    /* background-color: #FF5F38; */
+    position: relative;
+}
+
+.section-3-div .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-3-div .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all linear 0.8s;
+}
+
+.section-3-div .box:hover img{
+    opacity: 0;
+}
+
+.section-3-div .box .image{
+    /* position: absolute; */
+    height: 10%;
+    width: 50%;
+    padding: 10px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-3-div .box span{
+    height: 50%;
+    width: 200px;
+    display: flex;
+}
+
+.section-3-div .box:hover .image{
+    opacity: 1;
+}
+
+/*--------------------------------*/
+.section-5{
+    height: 100vh;
+    width: 100%;
+    background-color: #faf8f3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-5 video{
+    height: 100%;
+    overflow: hidden;
+}
+
+.section-5 svg{
+    height: 65%;
+    position: absolute;
+}
+
+.cursor1{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.cursor1 h5{
+    font-family: nb;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
